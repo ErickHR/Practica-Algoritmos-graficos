@@ -1,3 +1,7 @@
+Nombres
+	Roman Aguilar Thom Maurick
+	Huaranca Rivas Erick
+
 1.-
 	1 - b
 	2 - c
@@ -32,6 +36,91 @@ int main(){
     }
     return 0;
 }
+4
+a)
+public class Ejemplo {
+    
+    public Arreglo array = new Arreglo(); ;
+    
+    public void list(){
+        
+    }
+    
+    public void addItem (int item){
+        
+        array.addItem(item);
+    }
+    
+}
+b)
+public class Arreglo {
+
+    private int[] n;
+    private int indice;
+
+    public Arreglo() {
+        
+        this.indice = 0;
+        this.n = new int[10];
+        
+    }
+    
+        /*operaciones publicas básicas*/
+    
+    /*public int sizeA(){
+        int cant = 0;
+        
+        for (int i = 0; i < 10; i++) {
+            if( this.n[i] ){
+                cant++;
+            }
+        }
+        
+        return cant;
+    }*/
+    
+    public int lenght (){
+        
+        return this.n.length;
+        
+    }
+    
+    public int getNumber( int position ) {
+        
+        return this.n[position];
+        
+    }
+    
+    public void addItem( int item ) {
+        
+        if ( this.indice != this.n.length )
+            this.n[indice] = item;
+        
+    }
+    
+    public void ampliarArray(){
+        
+        
+    }
+    
+    /*operaciones publicas complementarias*/
+    
+    /*public void deleteEnd(){
+        
+        this.n.
+        
+    }*/
+    
+    public void deleteAll(){
+        
+        this.n = new int[10];
+        
+    }
+    
+}
+
+
+
 5.-
 a)
 #include <iostream>
@@ -93,3 +182,53 @@ int main() {
 b)
 public class Persona{}
 public class Alumno extends Persona{}
+
+6
+class Main {
+  public static void main(String[] args) {
+    int[][] matrix = {
+      {0,0,1,0,0,0,0,0,0,0},
+      {1,0,1,0,1,0,0,0,0,0},
+      {0,0,1,0,1,0,0,0,0,0},
+      {0,0,1,0,1,0,0,0,0,0},
+      {0,0,1,0,1,0,0,0,0,1},
+      {0,0,1,0,1,0,0,0,0,0},
+      {0,0,1,0,1,0,0,0,0,0},
+      {0,0,1,0,1,0,0,0,0,0},
+      {0,0,1,0,1,0,0,0,0,0},
+      {0,0,1,0,0,0,0,0,0,0}
+    };
+  }
+  public static void getBordeSuperior(int[][] matrix){
+      for(int column=0;column<matrix[0].length;column++){
+        if(matrix[0][column]==1){
+
+          System.out.println("posicion : ["+0+"]["+"["+column+"]"+" = "+1);
+        }
+      }
+  }
+  public static void getBordeInferior(int[][] matrix){
+    for(int column=0;column<matrix[0].length;column++){
+        if(matrix[matrix[0].length-1][column]==1){
+
+          System.out.println("posicion : ["+0+"]["+"["+column+"]"+" = "+1);
+        }
+      }
+
+  }
+  public static void getBordeIzquierdo(int[][] matrix){
+      for(int row=0;row<matrix[0].length;row++){
+        if(matrix[row][0]==1){
+
+          System.out.println("posicion : ["+row+"]["+"["+0+"]"+" = "+1);
+        }
+      }
+  }
+  public static void getBordeDerecho(int[][] matrix){
+    for(int row=0;row<matrix[0].length;row++){
+        if(matrix[row][matrix[0].length-1]==1){
+	  System.out.println("posicion : ["+row+"]["+"["+matrix[0].length-1+"]"+" = "+1);
+        }
+      }
+  }
+}
