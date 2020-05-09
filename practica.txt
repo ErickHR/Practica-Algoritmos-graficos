@@ -5,3 +5,16 @@
 	5 - e
 	
 2.-
+#include <iostream>
+#include <string> 
+using namespace std;
+ 
+int main(){
+    int matrix[3][3] = {{1,2,123},{1,30,4157},{1,2,56}};
+    for(int row=0;row<3;row++)
+      for(int column=0;column<3;column++){
+        string s = to_string(matrix[row][column]);
+        cout<<"matriz["<<row<<"]["<<column<<"] = "<<s<<" size : "<<s.length()<<"\n";
+      }
+    return 0;
+}
