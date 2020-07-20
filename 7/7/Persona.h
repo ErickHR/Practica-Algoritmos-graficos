@@ -7,12 +7,12 @@ using namespace std;
 class Persona
 {
 	private :
-		string nombre;
-		string apellido;
-		string dni;
-	    string fecha;
-	    string direccion;
-	    string ciudad;
+	    	string nombre;
+            	string apellido;
+	    	string dni;
+	    	string fecha;
+	    	string direccion;
+	    	string ciudad;
 		
 	public:
 		Persona(string nombre,string dni,string apellido,string fecha,string direccion,string ciudad);
